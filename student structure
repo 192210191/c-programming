@@ -1,0 +1,30 @@
+#include<stdio.h>
+struct student
+{
+	char name[50];
+	int roll;
+	float m1,m2,m3,avg;
+}e[2];
+int main()
+{
+int i;
+	for(int i=0;i<2;i++)
+	{
+printf("enter the name");
+scanf("%s",e[i].name);
+printf("enter the roll");
+scanf("%d",&e[i].roll);
+printf("enter the m1,m2,m3");
+scanf("%f%f%f",&e[i].m1,&e[i].m2,&e[i].m3);
+e[i].avg=(e[i].m1+e[i].m2+e[i].m3)/3;}
+	for(i=0;i<2;i++)
+	{
+printf("student information is\n");
+printf("name is %s\n",e[i].name);
+printf("roll is %d\n",e[i].roll);
+printf("m1 is %f\n",e[i].m1);
+printf("m2 is %f\n",e[i].m2);
+printf("m3 is %f\n",e[i].m3);
+printf("avg is %f\n",e[i].avg);
+}
+}
